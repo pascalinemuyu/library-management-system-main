@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="CSS/LIB.CSS"/>
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      border: 1px solid #888;
+      width: 80%; 
+    }
+    
+   
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+    }
+      
+    @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+    }
+    
+   
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Student Login Form</h2>
+    <p3>Click the button below to login. Better still <a href="Sign Up.html">Sign Up </a> if it is your first time to acces library Resources </p3> <br>
+    <br>
+    <br>
+    <br>
+   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click to Enter your details</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Student Number</b></label>
+          <input type="text" placeholder="Enter Student Number" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <Footer>
+      <h2>QUick Links</h2>
+      <div class="flex container">
+  
+        <div class="footer-quick-links">
+  
+         <ul> 
+           <li><a href="SCHOOL LIBRARY.HTML">Home</a></li>
+           <li><a href="SCHOOL LIBRARY.HTML">Librarians</a></li>
+           <li><a href="Books.html">Books</a></li>
+         </ul>
+         </div>
+  
+  
+        <div class="footer-quick-links">
+  
+         <ul> 
+           <li><a href="Rules.html">Rules&Regu </a></li>
+           <li><a href="Login.html">Login</a></li>
+           <li><a href="Sign Up.html">Sign Up</a></li>
+         </ul>
+         </div>
+  
+         <div class="footer-follow">
+               <h5 class="follow-us">Follow Us</h5>
+               <ul>
+                 <li><a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a></li>
+                 <li><a href="https://www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+                 <li><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></li>
+  
+               </ul>
+         </div>
+  
+         <div class="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63656.40529150884!2d15.261684740231114!3d-4.311893497630476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a317b816515b9%3A0x7eeb5b3e73ad44aa!2sGombe%2C%20Kinshasa%2C%20Democratic%20Republic%20of%20the%20Congo!5e0!3m2!1sen!2ske!4v1597831975723!5m2!1sen!2ske" width="350" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+   
+      </div>
+      <small>Designed with
+        L<span class="fa fa-heart" style="color: brown;"></span>ve by Pascaline
+        .
+      </small>
+  
+    </Footer>
+    
+    <script>
+    
+    var modal = document.getElementById('id01');
+    
+  
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+    </body>
+    </html>
+    
